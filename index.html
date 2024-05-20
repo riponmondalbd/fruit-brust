@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/5ce96db8a2.js" crossorigin="anonymous"></script>
+
     <!-- google font lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,8 +41,54 @@
     </style>
 </head>
 
-<body>
+<body class="font-lato">
+    <header class="container mx-auto">
+        <!-- nav bar and logo start -->
+        <nav>
+            <div class="navbar bg-white md:bg-[#F85559] rounded-[60px] my-14 py-7">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-[#FFF]">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
 
+                <div class="navbar-center gap-6">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <img src="images/logo.png" alt="">
+                        <a class="btn btn-ghost text-[40px] font-bold text-[#121212] md:text-white">Fruit Burst</a>
+                    </div>
+                </div>
+
+                <div class="navbar-end flex items-center relative mr-12">
+                    <input type="text" placeholder="Search here"
+                        class="input input-bordered rounded-3xl w-full max-w-xs md:block hidden" />
+                    <i class="fa-solid fa-magnifying-glass absolute right-3 md:block hidden"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar and logo end -->
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
